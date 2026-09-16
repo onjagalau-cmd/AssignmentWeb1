@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football - About</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Data table and Contact Form</h1>
+        <p>Comparisons of top leagues in football</p>
+
+        <table>
+            <caption>Top European Football Leagues Comparison</caption>
+            <thead>
+                <tr>
+                    <th scope="col">League(Country)</th>
+                    <th scope="col">Average Goals per Match</th>
+                    <th scope="col">Total Squad Value (€ Billion)</th>
+                    <th scope=col>Title Race (Champions in Last 5 Years)</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr><th scope="row">Premier League (England)</th><td>~3.28</td><td>~11.5</td><td>2 (Man City, Liverpool)</td></tr>
+                <tr><th scope="row">La Liga (Spain)</th><td>~2.64</td><td>~5.2</td><td>3 (Real Madrid, Barcelona, Atletico)</td></tr>
+                <tr><th scope="row">Serie A (Italy)</th><td>~2.61</td><td>~4.8</td><td>4 (Inter, Napoli, Milan, Juventus)</td></tr>
+                <tr><th scope="row">Bundesliga (Germany)</th><td>~3.22</td><td>~4.5</td><td>2 (Bayern, Leverkusen)</td></tr>
+            </tbody>
+            <tfoot>
+                <tr><th scope="row"     colspan="3">Total ligues Analyzed:</th><td>4</td></tr>
+            </tfoot>
+
+        </table>
+
+
+        <section>
+            <h2>Join Our Football Community</h2>
+            
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Fan & Player Registration</legend>
+
+                    <p>
+                        <label for="fullname">Full Name:</label><br>
+                        <input type="text" id="fullname" name="fullname" required placeholder="John Doe" maxlength="40">
+                    </p>
+
+                    <p>
+                        <label for="email">Email Address:</label><br>
+                        <input type="email" id="email" name="email" required placeholder="example@mail.com">
+                    </p>
+
+                    <p>
+                        <label for="experience">Years of Playing Experience:</label><br>
+                        <input type="number" id="experience" name="experience" min="0" max="50" placeholder="e.g. 5">
+                    </p>
+
+                    <p>
+                        <label for="startdate">Preferred Start Date:</label><br>
+                        <input type="date" id="startdate" name="startdate">
+                    </p>
+
+                    <p>
+                        <label for="favcolor">Favorite Kit Color:</label><br>
+                        <input type="color" id="favcolor" name="favcolor" value="#1e3a8a">
+                    </p>
+
+                    <p>
+                        <span>Preferred Field Position:</span><br>
+                        <input type="radio" id="pos-gk" name="position" value="goalkeeper">
+                        <label for="pos-gk">Goalkeeper</label>
+                        
+                        <input type="radio" id="pos-def" name="position" value="defender">
+                        <label for="pos-def">Defender</label>
+
+                        <input type="radio" id="pos-mid" name="position" value="midfielder" checked>
+                        <label for="pos-mid">Midfielder</label>
+
+                        <input type="radio" id="pos-fwd" name="position" value="forward">
+                        <label for="pos-fwd">Forward</label>
+                    </p>
+
+                    <p>
+                        <label for="comments">Tactical Notes or Comments:</label><br>
+                        <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Tell us about your playstyle..."></textarea>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree to the community code of conduct</label>
+                    </p>
+
+                    <button type="submit">Submit Registration</button>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 World Football Hub. All rights reserved.</p>
+    </footer>
+</body>
