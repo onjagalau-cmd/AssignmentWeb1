@@ -1,4 +1,3 @@
-/* 1. Базовые настройки и шрифты */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -7,7 +6,6 @@ body {
     margin: 20px;
 }
 
-/* 2. Контейнер страницы (Box Model: padding, margin) */
 main {
     max-width: 800px;
     margin: 0 auto;
@@ -16,7 +14,6 @@ main {
     border-radius: 8px;
 }
 
-/* 3. Шапка и Меню */
 header {
     background-color: #1e3a8a;
     padding: 10px 0;
@@ -38,7 +35,6 @@ nav a {
     padding: 5px 10px;
 }
 
-/* Псевдоклассы (:hover, :focus, .active) */
 nav a:hover, nav a:focus {
     background-color: #3b82f6;
     border-radius: 4px;
@@ -48,7 +44,6 @@ nav a.active {
     border-bottom: 2px solid white;
 }
 
-/* 4. Заголовки, цитата и картинки */
 h1, h2, h3 {
     color: #1e3a8a;
     margin-top: 15px;
@@ -68,7 +63,6 @@ img {
     border-radius: 6px;
 }
 
-/* 5. Таблица (Оформление границ и фона) */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -90,7 +84,6 @@ tbody tr:nth-child(even) {
     background-color: #f9fafb;
 }
 
-/* 6. Форма и элементы ввода */
 fieldset {
     border: 1px solid #ccc;
     padding: 15px;
@@ -115,7 +108,6 @@ textarea {
     border-radius: 4px;
 }
 
-/* Состояние фокуса полей ввода */
 input:focus, textarea:focus {
     border-color: #3b82f6;
     outline: none;
@@ -134,7 +126,6 @@ button:hover {
     background-color: #3b82f6;
 }
 
-/* 7. Подвал */
 footer {
     text-align: center;
     margin-top: 20px;
